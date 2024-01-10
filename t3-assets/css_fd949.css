@@ -1680,7 +1680,7 @@ span.menu-desc {
 #ja-footer .main {
   padding: 0;
   position: relative;
-  text-align: right;
+  text-align: center;
 }
 #ja-footer .inner {
   padding: 0;
@@ -3721,7 +3721,7 @@ h1.logo a {
   background: url("../templates-ja_edenite/images/shadow.gif") repeat-x left
     bottom;
   height: 37px;
-  margin: 0 0 25px;
+  margin: 0 0 15px;
 }
 .ja-mainnav-haschild #ja-mainnav {
   margin-bottom: 0;
@@ -4404,12 +4404,22 @@ ul.level0 li.haschild-over {
 
 /* Dropdown */
 
+.dropdown-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-bottom: 15px;
+}
+
 .dropdown {
+  display: inline-block;
+  justify-content: center;
+  position: relative;
   text-align: center;
 }
 
 .dropdown-button {
-  margin-bottom: 10px;
   background-color: transparent;
   padding: 10px 30px;
   border-radius: 10px;
@@ -4420,6 +4430,50 @@ ul.level0 li.haschild-over {
   color: red;
 }
 
+.dropdown:hover .dropdown-list {
+  display: block;
+}
+
+.dropdown-list {
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+
+  display: none;
+  z-index: 20;
+}
+
 .dropdown-item {
-  padding: 0;
+  padding: 5px;
+  border: 1px solid grey;
+}
+
+.dropdown-item:hover {
+  background-color: red;
+  color: #fff;
+  font-weight: 700;
+}
+
+/* 2021 List */
+
+.info2021-list {
+  width: 100%;
+  position: absolute;
+  top: 75%;
+  left: 100%;
+  background-color: #fff;
+
+  display: none;
+  z-index: 21;
+}
+
+.info2021-item {
+  padding: 5px;
+  border: 1px solid grey;
+}
+
+.info2021:hover ~ .info2021-list {
+  display: block;
 }
