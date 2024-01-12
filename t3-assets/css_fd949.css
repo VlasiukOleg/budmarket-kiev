@@ -4406,7 +4406,7 @@ ul.level0 li.haschild-over {
 
 .dropdown-wrap {
   display: flex;
-  justify-content: center;
+  justify-content: right;
   align-items: center;
 
   margin-bottom: 15px;
@@ -4455,6 +4455,11 @@ ul.level0 li.haschild-over {
   background-color: #cc0000;
   color: #fff;
   font-weight: 700;
+}
+
+.dropdown-link {
+  color: currentColor;
+  text-decoration: none;
 }
 
 /* 2021 List */

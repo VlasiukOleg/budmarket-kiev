@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  text-align: center;
+}
+
+.info2021 {
+  max-width: 960px;
+  padding: 5px 15px;
+  margin: 0 auto;
+}
+
+.info2021-item {
+  margin-bottom: 10px;
+  border-bottom: 1px solid grey;
+  padding-bottom: 5px;
+}
+
+.info2021-link {
+  color: gray;
+}
+
+.info2021-link:hover {
+  color: #cc0000;
+}
+
+.back-link {
+  color: black;
+  font-size: 12px;
+}
